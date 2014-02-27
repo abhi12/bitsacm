@@ -1,0 +1,134 @@
+body {
+background-color: ;
+font-size: 11px;
+font-family: Verdana, Arial, SunSans-Regular, Sans-Serif;
+color:#FFFFFF;
+padding:0px;
+margin:0px;
+}
+
+
+h1 {
+font-family: 'Finger Paint', cursive;
+font-size: 40px;
+text-align:center;
+text-transform:uppercase;
+background-color: #14293D;
+border-top:1px solid #564b47;
+border-bottom:1px solid #564b47;
+padding:5px 15px;
+margin:0px }
+
+h2 {
+background-color: #000000;
+text-align:center;
+font-family: 'Nosifer', cursive;
+font-size:20px;
+font-weight: normal;
+padding: 5px 15px;
+margin:0px;
+}
+h3 {
+text-align:center;
+font-family: 'Audiowide', cursive;
+}
+
+/* ----------container to center the layout-------------- */
+#container {
+width: 100%;
+margin-bottom: 10px;
+margin-left: auto;
+margin-right: auto;
+}
+
+/* ----------banner for logo-------------- */
+#banner {
+text-align: left;
+padding: 0px;
+margin: 0px;
+}
+
+#banner img {
+
+} 
+
+/* -----------------content--------------------- */
+#content {
+background:#A0A39D;
+background: -webkit-gradient(linear, 0% 0%, 0% 150%, from(#A0A39D), to(#fff));
+background: -ms-linear-gradient(top, #A0A39D 0%,#fff 100%); /* IE10+ */
+background: -moz-linear-gradient(top, #A0A39D, #fff);
+
+padding: 0px;
+margin-left: 0px;
+margin-right: 0px;
+width:100%;
+} 
+
+/*div#content { 
+min-height:600px;
+height:expression(this.scrollHeight > 600 ? "auto":"600px");
+}*/
+
+#form {
+margin-top:8px;
+float:left;
+width:30%;
+margin-left: 110px;
+}
+
+#ins {
+margin-top:4px;
+background-color:#ffffff;
+overflow:scroll;
+height:150px;
+}
+
+#ins fieldset {
+color:#000;
+background-color:#ffffff;
+}
+
+#video {
+margin-top:15px;
+float:right;
+width:50%;
+}
+
+#tiles {
+margin-left:50px;;
+padding-top:60px;
+margin-top:100px;
+clear:both;
+height:300px;
+}
+
+#tiles img{
+transition: width 1s;
+-moz-transition: width 1s; /* Firefox 4 */
+-webkit-transition:width .5s, height .5s, -webkit-transform .5s, box-shadow 0s; /* Safari and Chrome */
+-o-transition: width .5s; /* Opera */
+}
+
+#tiles img:hover{
+	box-shadow: 0px 0px 20px 10px rgba(255,255,255,1);
+	-webkit-transform: scale(1.2);
+	-moz-transform: scale(1.2);
+	-o-transform: scale(1.2);
+	-ms-transform: scale(1.2);
+	transform: scale(1.2);
+}
+	
+/* -----------footer--------------------------- */
+#footer {
+background-color:#000;
+color:#fff;
+clear: both;
+margin: 0px;
+padding-top: 5px;
+padding-bottom:5px;
+text-align: center; }
+
+h4 {
+font-size: 10px;
+}

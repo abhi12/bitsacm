@@ -1,0 +1,187 @@
+@charset "utf-8";
+/* CSS Document */
+
+html ,body{ 
+   min-height: 100%;
+   margin:0 0;
+}
+
+body{
+background:#333;
+background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#ccc), to(#000));
+background: -ms-linear-gradient(top, #ccc 0%,#000 100%); /* IE10+ */
+background: -moz-linear-gradient(top, #ccc, #000);
+}
+
+.elements_wrapper{
+width:100%;
+}
+
+.header{
+display:block;
+
+/* padding-left:17%; */
+text-align:center;
+margin-left:10%;
+height:100px;
+}
+
+hr{
+	position:absolute;
+	top:105px;
+	width:100%;
+    border: 0;
+    height: 1px;
+    background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+    background-image:    -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+    background-image:     -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+    background-image:      -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+}
+
+@font-face
+{
+font-family: Anastasia Regular;
+src: url('../images/ANASTAS.ttf');
+}
+
+.header h2{
+padding-top:0px;
+margin-top:0px;
+font-size:600%;
+/*Anastasia Regular;*/
+font-family:"Comic Sans MS", cursive, sans-serif;
+float:left;
+}
+
+.header p{
+padding-top:30px;
+font-family:Monotype Corsiva;
+float:left;
+padding-right:10px;
+}
+
+.page_content a{
+text-decoration:none;
+}
+
+.header img{
+margin-left:5px;
+margin-right:5px;
+float:left;
+}
+
+.page_content{
+text-align:center;
+}
+
+.page_content div{
+margin-top:20px;
+margin-bottom:20px;
+}
+
+.element_thumb{
+border-radius:100px;
+position:absolute;
+height:100px;
+width:100px;
+cursor:pointer;
+-webkit-transition:-webkit-transform .5s;
+transition:transform .5s;
+}
+
+.element1{
+top:200px;
+/* left:45.571302037201062887511071744907%; */
+left:46.5%;
+}
+
+
+.element1:hover{
+-webkit-transform: scale(1.2,1.2);
+transform: scale(1.2,1.2);
+
+box-shadow: 0px 0px 10px #333;
+-webkit-box-shadow: 0px 0px 10px #333;
+-moz-box-shadow: 0px 0px 10px #333;
+}
+
+.element2{
+top:310px;
+right:36%;
+}
+
+.element2:hover{
+-webkit-transform: scale(1.2,1.2);
+transform: scale(1.2,1.2);
+
+box-shadow: 0px 0px 10px #333;
+-webkit-box-shadow: 0px 0px 10px #333;
+-moz-box-shadow: 0px 0px 10px #333;
+}
+
+.element3{
+top:475px;
+right:40%;
+}
+
+.element3:hover{
+-webkit-transform: scale(1.2,1.2);
+transform: scale(1.2,1.2);
+
+box-shadow: 0px 0px 10px #333;
+-webkit-box-shadow: 0px 0px 10px #333;
+-moz-box-shadow: 0px 0px 10px #333;
+}
+
+.element4{
+top:475px;
+left:40%;
+}
+
+.element4:hover{
+-webkit-transform: scale(1.2,1.2);
+transform: scale(1.2,1.2);
+
+box-shadow: 0px 0px 10px #333;
+-webkit-box-shadow: 0px 0px 10px #333;
+-moz-box-shadow: 0px 0px 10px #333;
+}
+
+.element5{
+top:310px;
+left:36%;
+}
+
+.element5:hover{
+-webkit-transform: scale(1.2,1.2);
+transform: scale(1.2,1.2);
+
+box-shadow: 0px 0px 10px #333;
+-webkit-box-shadow: 0px 0px 10px #333;
+-moz-box-shadow: 0px 0px 10px #333;
+}
+
+#elName{
+position:absolute;
+top:330px;
+left:46%;
+font-family:'Algerian';
+font-weight:600;
+font-size:200%;
+}
+
+.footer{
+height:80px;
+position:absolute;
+bottom:0px;
+right:30%;
+border-color:#c0c0c0;
+}
+.footer p{
+/*padding-left:5px;
+padding-right:5px;
+padding-top:0px;
+margin-top:0px;*/
+font-size:90%;
+color:#c0c0c0;
+}

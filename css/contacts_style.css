@@ -1,0 +1,32 @@
+@charset "utf-8";
+/* CSS Document */
+
+.wrapper_contacts{
+width:80%;
+margin-left:8%;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+    background-image:    -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+    background-image:     -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+    background-image:      -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+}
+
+.wrapper_contacts table{
+width:100%;
+}
+
+.contacts_table{
+width:100%;
+border:2px solid;
+padding:2%;
+border-radius:5px;
+}
+
+
+.wrapper_contacts h4{
+font-family:Comic Sans MS;
+}

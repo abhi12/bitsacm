@@ -1,0 +1,308 @@
+@charset "utf-8";
+/* CSS Document */
+
+.wrapper_navbar{
+margin-left:15%;
+margin-right:15%;
+width:70%;
+}
+
+.navbar_page{
+display:block;
+position:relative;
+width:100%;
+height:30px;
+background:#333;
+background: -webkit-gradient(linear, 0% 0%, 0% 150%, from(#000), to(#333));
+background: -ms-linear-gradient(top, #000 0%,#333 100%); /* IE10+ */
+background: -moz-linear-gradient(top, #000, #333);
+border-radius:6px;
+overflow:hidden;
+}
+
+.navbar_list1{
+height:30px;
+margin:0;
+padding-left:2px;
+padding-top:2px;
+list-style:none;
+}
+
+.navbar_item{
+margin-left:20%;
+padding-right:0;
+padding-left:20;
+margin:0;
+float:left;
+width:15%;
+border-right: 2px solid #323235;
+border-radius:5px;
+overflow:hidden;
+display:block;
+}
+
+.navbar_item:hover{
+   background:#FF8000;
+   background: -webkit-radial-gradient(50% 150%, ellipse, #fff , #222 50%);
+   background: -moz-radial-gradient(50% 150%, ellipse, #fff , #333 50%);	
+   background: -ms-radial-gradient(50% 150%, ellipse, #fff , #333 50%);   
+}
+
+.navbar_item a{
+padding-top:4px;
+padding-bottom:4px;
+padding-left:20px;
+display:block;
+text-decoration:none;
+font-family:Lucida Sans;
+color:white;
+}
+
+.navbar_item a:hover{
+color:#00d8ff;
+text-decoration:none;
+}
+
+.navbar_img{
+vertical-align:middle;
+float:left;
+border:none;
+height:21px;
+width:21px;
+
+}
+
+#home_icon{
+-webkit-transition:-webkit-transform 1s; 
+transition:transform 1s; 
+}
+
+#navbar_list1_item1:hover img{
+
+transform:rotatey(180deg);
+-webkit-transform:rotatey(180deg); 
+}
+
+#eventsicon_1{
+height:5px;
+float:none;
+vertical-align:top;
+position:absolute;
+}
+
+#eventsicon_2{
+height:5px;
+float:none;
+vertical-align:middle;
+position:absolute;
+top:13px;
+}
+
+#eventsicon_3{
+height:5px;
+float:none;
+vertical-align:bottom;
+}
+
+#gear_small{
+height:15px;
+width:15px;
+vertical-align:top;
+}
+
+#contact_icon_0,#contact_icon_1,#contact_icon_2,#contact_icon_3{
+/* vertical-align:middle; */
+position:absolute;
+}
+
+#navbar_list1_item4{
+width:17%
+}
+
+#navbar_list1_item6{
+border-right:none;
+width:20%;
+display:block;
+}
+
+#search_box{
+background:#333;
+border-radius:10px;
+padding-top:0px;
+margin-top:0px;
+width:50%;
+
+}
+
+#search_submit{
+border-style: none; 
+background: url('images/search1.png') no-repeat;
+}
+
+/* -------------------------------------------------------- */
+/*#navbar_list1_item1:hover img{
+	-webkit-animation:wobble 1s 1;
+	-moz-animation:wobble 1s .7;
+	-ms-animation:wobble 1s 1;
+	animation:wobble 1s 1;
+}
+ */
+@-webkit-keyframes wobble
+{
+	0% {-webkit-transform:rotate(0deg);}
+	10% {-webkit-transform:rotate(20deg);}
+	30% {-webkit-transform:rotate(-20deg);}
+	50% {-webkit-transform:rotate(15deg);}
+	70% {-webkit-transform:rotate(-15deg);}
+	90% {-webkit-transform:rotate(10deg);}
+	100% {-webkit-transform:rotate(0deg);}
+}
+
+@keyframes wobble {
+	20% { transform: rotate(20deg); }	
+	40% { transform: rotate(-13deg); }
+	60% { transform: rotate(7deg); }	
+	80% { transform: rotate(-5deg); }	
+	90%{ transform: rotate(2deg); }	
+	100% { transform: rotate(0deg); }
+}
+/* -------------------------------------------------------- */
+#navbar_list1_item2:hover #eventsicon_1{
+-webkit-animation:translateUp 1.5s 1;
+-webkit-animation-direction:reverse;
+-webkit-animation-delay:.4s;
+animation:translateUp 1.5s 1;
+animation-direction:reverse;
+animation-delay:.4s;
+
+}
+
+#navbar_list1_item2:hover #eventsicon_2{
+-webkit-animation:translateUp 1.5s 1;
+-webkit-animation-direction:reverse;
+-webkit-animation-delay:.2s;
+animation:translateUp 1.5s 1;
+animation-direction:reverse;
+animation-delay:.2s
+}
+
+#navbar_list1_item2:hover #eventsicon_3{
+-webkit-animation:translateUp 1.5s 1;
+-webkit-animation-direction:reverse;
+animation:translateUp 1.5s 1;
+animation-direction:reverse;
+}
+/* -------------------------------------------------------- */
+ #navbar_list1_item3:hover img{
+	-webkit-animation:translateUp 1s 1;
+	-moz-animation:translateUp 1s 1;
+	-ms-animation:translateUp 1s 1;
+	animation:translateUp 1s 1;
+}
+ 
+@-webkit-keyframes translateUp
+{
+	0% {-webkit-transform:translate(0px,0px);opacity:1;}
+	60% {-webkit-transform:translate(0px,-30px);opacity:0.3;}
+	60.001% {-webkit-transform:translate(0px,30px);}
+	100% {-webkit-transform:translate(0px,0px);opacity:1;}
+}
+
+@keyframes translateUp
+{
+	0% {transform:translate(0px,0px);opacity:1;}
+	60% {transform:translate(0px,-30px);opacity:0.3;}
+	60.001% {transform:translate(0px,30px);}
+	100% {transform:translate(0px,0px);opacity:1;}
+}
+/* -------------------------------------------------------- */
+#navbar_list1_item4:hover #gear_big{
+    -webkit-animation: rotating 2s linear infinite;
+	-moz-animation: rotating 2s linear infinite;
+	-ms-animation: rotating 2s linear infinite;
+	animation: rotating 2s linear infinite;
+}
+
+#navbar_list1_item4:hover #gear_small{
+    -webkit-animation: rotating 2s linear infinite;
+	-webkit-animation-direction:reverse;
+	-moz-animation: rotating 2s linear infinite;
+	-moz-animation-direction:reverse;
+	animation: rotating 2s linear infinite;
+	animation-direction:reverse;
+}
+@-webkit-keyframes rotating {
+    from{
+        -webkit-transform: rotate(0deg);
+    }
+    to{
+        -webkit-transform: rotate(360deg);
+    }
+}
+@-moz-keyframes rotating {
+       0%{moz-transform: rotate(0deg);}
+		50%{-moz-transform: rotate(180deg);}
+       100%{-moz-transform: rotate(360deg);}
+}
+
+@keyframes rotating {
+       0%{transform: rotate(0deg);}
+		50%{ transform: rotate(180deg);}
+       100%{transform: rotate(360deg);}
+}
+/* -------------------------------------------------------- */
+
+#navbar_list1_item5:hover #contact_icon_1{
+-webkit-animation: fadeIn_1 1.5s infinite;
+animation: fadeIn_1 1.5s infinite;
+}
+
+#navbar_list1_item5:hover #contact_icon_2{
+-webkit-animation: fadeIn_2 1.5s infinite;
+animation: fadeIn_2 1.5s infinite;
+}
+
+#navbar_list1_item5:hover #contact_icon_3{
+-webkit-animation: fadeIn_3 1.5s infinite;
+animation: fadeIn_3 1.5s infinite;
+}
+
+@-webkit-keyframes fadeIn_1 {
+       0%{opacity:0;}
+       33.33%{opacity:1;}
+}
+
+@keyframes fadeIn_1 {
+       0%{opacity:0;}
+       33.33%{opacity:1;}
+}
+
+@-webkit-keyframes fadeIn_2 {
+       0%{opacity:0;}
+       33.33%{opacity:0;}
+	   66.66%{opacity:1;}
+	   100%{opacity:1;}	   
+}
+
+@keyframes fadeIn_2 {
+       0%{opacity:0;}
+       33.33%{opacity:0;}
+	   66.66%{opacity:1;}
+	   100%{opacity:1;}	   
+}
+
+@-webkit-keyframes fadeIn_3 {
+       0%{opacity:0;}
+	   33.33%{opacity:0;}
+	   66.66%{opacity:0;}
+       100%{opacity:1;}
+}
+
+@keyframes fadeIn_3 {
+       0%{opacity:0;}
+	   33.33%{opacity:0;}
+	   66.66%{opacity:0;}
+       100%{opacity:1;}
+}
+
+-------------------------------------

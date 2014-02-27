@@ -1,0 +1,93 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+	<script>
+	var canvas;
+	var context;
+	var count = 0;
+	var inter;
+
+	var xyPoints = [[2,95],[5,95],[13,95],[17,95],[19,95],[22,95],[25,95],[24,93],[25,93],[29,93],[33,93],[36,93],[39,93],[39,95],[43,96],[48,97],[54,97],[59,97],[61,97],[67,98],[70,98],[74,98],[80,99],[83,99],[89,99],[93,99],[94,99],[94,96],[102,96],[104,99],[110,99],[120,99],[120,94],[123,92],[130,92],[136,92],[139,92],[140,92],[140,87],[147,87],[149,85],[151,81],[151,78],[151,75],[151,74],[151,70],[151,65],[151,64],[151,62],[151,59],[151,58],[152,56],[152,54],[152,53],[152,50],[152,47],[152,46],[152,44],[152,44],[152,43],[154,41],[156,39],[156,36],[156,34],[156,32],[155,30],[155,29],[156,28],[157,28],[159,27],[160,13],[162,12],[164,11],[166,10],[166,9],[166,10],[167,11],[168,11],[170,12],[171,12],[172,12],[172,13],[172,15],[172,16],[172,18],[172,19],[172,21],[172,22],[172,23],[172,25],[172,25],[174,26],[176,26],[179,27],[179,30],[180,33],[180,36],[181,39],[181,39],[183,41],[184,42],[185,47],[185,48],[185,52],[185,55],[185,57],[185,59],[185,64],[186,67],[186,70],[187,71],[185,73],[187,75],[187,77],[187,81],[187,83],[187,85],[187,87],[190,87],[193,86],[194,86],[197,85],[200,87],[199,91],[201,92],[205,92],[208,92],[210,92],[211,92],[214,92],[214,92],[215,92],[217,92],[217,93],[217,95],[218,98],[219,99],[219,99],[222,98],[228,98],[230,98],[233,98],[236,98],[236,98],[237,98],[237,94],[244,94],[246,94],[246,98],[248,99],[253,98],[257,98],[262,98],[265,98],[268,97],[274,97],[279,97],[282,97],[285,96],[284,96],[289,96],[293,96],[297,96],[300,96],[300,91],[305,92],[309,92],[311,91],[314,91],[314,92],[315,95],[318,94],[322,94],[324,94],[328,94],[332,94],[336,94],[338,94]];
+
+	var points = {
+		linePoint : []
+	};
+
+	function Point(x,y) {
+		this.x = x;
+		this.y = y;
+	}
+
+	function entPoints() {
+
+		for(var i = 0; i < xyPoints.length; i++) {
+			var x = xyPoints[i][0];
+			var y = xyPoints[i][1];
+			points.linePoint.push(new Point(x,y));
+		}
+
+		inter = setInterval("drawPoints()",10);
+		
+	}
+
+	function drawPoints() {
+
+		canvas = document.getElementById('draws');
+		context = canvas.getContext("2d");
+		context.strokeStyle = "#000";
+		context.lineWidth = 0;
+		context.shadowColor='grey';
+		context.shadowOffsetX=1;
+		context.shadowOffsetY=1;
+		context.shadowBlur=0;
+
+		if(count == 0) {
+			context.beginPath();  
+			context.moveTo(points.linePoint[count].x, 
+			points.linePoint[count].y);
+		} else {
+			context.moveTo(points.linePoint[count-1].x, 
+			points.linePoint[count-1].y);
+			context.lineTo(points.linePoint[count].x, 
+			points.linePoint[count].y);
+		}
+
+		context.stroke();
+		count++;
+
+		if(count == xyPoints.length) {
+			clearInterval(inter);
+		}
+	}
+
+	window.addEventListener('load', entPoints);
+</script>
+<style>
+    body {
+		width:100%;
+		margin: 0px;
+        padding: 0px;
+    }
+ 
+	#header {
+		width:65%;
+		height:100px;
+		margin-top:10px;
+		margin-left:auto;
+		margin-right:auto;
+		text-align:center;
+	}
+	
+</style>
+  </head>
+  <body>
+  
+<div id="header">
+<img id="acm_logo" src="acm.png" style="height:89px;width:254px;float:left;" />
+	<canvas id="draws" width="350" height="110" style="position:absolute; left:39%;">
+   	</canvas>
+<img id="bits_logo" src="bitslogo.png" style="height:92px;width:90px;float:right;"/>
+</div>
+
+</body>
+</html>
